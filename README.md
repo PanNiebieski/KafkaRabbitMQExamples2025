@@ -110,7 +110,3 @@ channel.BasicPublish(exchange: "", routingKey: "hello", body: Encoding.UTF8.GetB
 
 Contributions are welcome! If you find any issues or want to add new examples, feel free to create a pull request or open an issue.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
