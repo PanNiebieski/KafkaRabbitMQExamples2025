@@ -83,6 +83,64 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ_Client", "RabbitMQ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ_Client", "RabbitMQ_Client", "{242A63CD-ED8B-4200-87F2-5D33E70F16F1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6", "6", "{423A2025-7B34-44AA-9B92-1FE0E95939F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7", "7", "{4D90E419-B567-49A7-A591-BD90B17FD891}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6", "6", "{CFE0C339-2289-4278-A2E2-61070F7B9E4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7", "7", "{2B1A7F2A-4F63-4032-881E-0F9502C9AA2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6", "6", "{F58C4BC4-8F29-4535-8F85-844E7B484A6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7", "7", "{6573B514-8DC6-4056-9911-794A30FDF0CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3EasyNetQ.PublishToMany", "01-RabbitMQ\3-4-5-6-Exchange\3_Publish_And_Subscribe-Sending-messages-to-many-consumers-at-once\EasyNetQ\3EasyNetQ.PublishToMany\3EasyNetQ.PublishToMany.csproj", "{713FB884-E653-DF07-61D6-722FD8567D30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3EasyNetQ.SubscribeOne", "01-RabbitMQ\3-4-5-6-Exchange\3_Publish_And_Subscribe-Sending-messages-to-many-consumers-at-once\EasyNetQ\3EasyNetQ.SubscribeOne\3EasyNetQ.SubscribeOne.csproj", "{2358AB2A-2957-083C-95E5-D71EAFA71D6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3EasyNetQ.SubscribeSecond", "01-RabbitMQ\3-4-5-6-Exchange\3_Publish_And_Subscribe-Sending-messages-to-many-consumers-at-once\EasyNetQ\3EasyNetQ.SubscribeSecond\3EasyNetQ.SubscribeSecond.csproj", "{09E7A662-E0CF-3545-3243-2014F9717B07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3RabbitMQClient.PublishToMany", "01-RabbitMQ\3-4-5-6-Exchange\3_Publish_And_Subscribe-Sending-messages-to-many-consumers-at-once\RabbitMQ_Client\6.8.1\3RabbitMQClient.PublishToMany\3RabbitMQClient.PublishToMany.csproj", "{78DBAB4E-9327-8C9B-A0BD-A7B772DC0435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3RabbitMQClient.SubscribeOne", "01-RabbitMQ\3-4-5-6-Exchange\3_Publish_And_Subscribe-Sending-messages-to-many-consumers-at-once\RabbitMQ_Client\6.8.1\3RabbitMQClient.SubscribeOne\3RabbitMQClient.SubscribeOne.csproj", "{76848E13-438F-7374-38F4-8492914B8FDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3RabbitMQClient.SubscribeSecond", "01-RabbitMQ\3-4-5-6-Exchange\3_Publish_And_Subscribe-Sending-messages-to-many-consumers-at-once\RabbitMQ_Client\6.8.1\3RabbitMQClient.SubscribeSecond\3RabbitMQClient.SubscribeSecond.csproj", "{68C44E80-D2BC-69D5-2062-DCBC03F4B0BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3RabbitMQClientV7.PublishToMany", "01-RabbitMQ\3-4-5-6-Exchange\3_Publish_And_Subscribe-Sending-messages-to-many-consumers-at-once\RabbitMQ_Client\7.0.0\3RabbitMQClientV7.PublishToMany\3RabbitMQClientV7.PublishToMany.csproj", "{A487E753-05A0-0287-BE5B-1E30025058DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3RabbitMQClientV7.SubscribeOne", "01-RabbitMQ\3-4-5-6-Exchange\3_Publish_And_Subscribe-Sending-messages-to-many-consumers-at-once\RabbitMQ_Client\7.0.0\3RabbitMQClientV7.SubscribeOne\3RabbitMQClientV7.SubscribeOne.csproj", "{5A34231C-68A6-0614-C21F-112237AFD3BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3RabbitMQClientV7.SubscribeSecond", "01-RabbitMQ\3-4-5-6-Exchange\3_Publish_And_Subscribe-Sending-messages-to-many-consumers-at-once\RabbitMQ_Client\7.0.0\3RabbitMQClientV7.SubscribeSecond\3RabbitMQClientV7.SubscribeSecond.csproj", "{410D8493-4B77-0CA5-5452-0DEAD4E99DC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4EasyNetQ,ProducerDirectWithKey", "01-RabbitMQ\3-4-5-6-Exchange\4_Routing-Receiving messages selectively\EasyNetQ\4EasyNetQ,ProducerDirectWithKey\4EasyNetQ,ProducerDirectWithKey.csproj", "{F74D0F1B-ED2A-2D29-C010-19C4174E100C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4EasyNETQ.ReciverDirectOne.MailAndTest", "01-RabbitMQ\3-4-5-6-Exchange\4_Routing-Receiving messages selectively\EasyNetQ\4EasyNETQ.ReciverDirectOne.MailAndTest\4EasyNETQ.ReciverDirectOne.MailAndTest.csproj", "{032FB9F3-14B2-20B0-A95E-541F0EBBBD87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4EasyNETQ.ReciverDirectTwo.Email", "01-RabbitMQ\3-4-5-6-Exchange\4_Routing-Receiving messages selectively\EasyNetQ\4EasyNETQ.ReciverDirectTwo.Email\4EasyNETQ.ReciverDirectTwo.Email.csproj", "{E43F13DB-40D5-D0DD-4840-281B27B9AB4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4RabbitMQClient.ProducerDirectWithKey", "01-RabbitMQ\3-4-5-6-Exchange\4_Routing-Receiving messages selectively\RabbitMQ_Client\6.8.1\4RabbitMQClient.ProducerDirectWithKey\4RabbitMQClient.ProducerDirectWithKey.csproj", "{E81CD1D3-F26C-DD6D-78CC-CE1DBD9BFC6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4RabbitMQClient.ReciverDirectOne.MailAndTest", "01-RabbitMQ\3-4-5-6-Exchange\4_Routing-Receiving messages selectively\RabbitMQ_Client\6.8.1\4RabbitMQClient.ReciverDirectOne.MailAndTest\4RabbitMQClient.ReciverDirectOne.MailAndTest.csproj", "{520EF616-9462-74E1-8C22-F8F2FBA09230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4RabbitMQClient.ReciverDirectTwoEmail", "01-RabbitMQ\3-4-5-6-Exchange\4_Routing-Receiving messages selectively\RabbitMQ_Client\6.8.1\4RabbitMQClient.ReciverDirectTwoEmail\4RabbitMQClient.ReciverDirectTwoEmail.csproj", "{A73E67D2-4F2D-0CC6-4949-1961BDEFE43D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4RabbitMQClientV7.ProducerDirectWithKey", "01-RabbitMQ\3-4-5-6-Exchange\4_Routing-Receiving messages selectively\RabbitMQ_Client\7.0.0\4RabbitMQClientV7.ProducerDirectWithKey\4RabbitMQClientV7.ProducerDirectWithKey.csproj", "{05057281-042F-70B2-EECC-FA250FA04B12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4RabbitMQClientV7.ReciverDirectOne.MailAndTest", "01-RabbitMQ\3-4-5-6-Exchange\4_Routing-Receiving messages selectively\RabbitMQ_Client\7.0.0\4RabbitMQClientV7.ReciverDirectOne.MailAndTest\4RabbitMQClientV7.ReciverDirectOne.MailAndTest.csproj", "{1CEBE01F-710E-3E42-DD5E-356949993BF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4RabbitMQClientV7.ReciverDirectTwoEmail", "01-RabbitMQ\3-4-5-6-Exchange\4_Routing-Receiving messages selectively\RabbitMQ_Client\7.0.0\4RabbitMQClientV7.ReciverDirectTwoEmail\4RabbitMQClientV7.ReciverDirectTwoEmail.csproj", "{AF4CB734-1E00-DB0A-1E3F-847C84078CF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5EasyNetQ.AccountsTopicSubscriber", "01-RabbitMQ\3-4-5-6-Exchange\5_Topics-Receiving messages based on a pattern\EasyNetQ\5EasyNetQ.AccountsTopicSubscriber\5EasyNetQ.AccountsTopicSubscriber.csproj", "{0CA2C2E4-3187-B240-E9F6-E053805852AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5EasyNetQ.CardPaymentTopicSubscriber", "01-RabbitMQ\3-4-5-6-Exchange\5_Topics-Receiving messages based on a pattern\EasyNetQ\5EasyNetQ.CardPaymentTopicSubscriber\5EasyNetQ.CardPaymentTopicSubscriber.csproj", "{C8D0FF0E-CA5D-D365-BBAA-32AD33470D1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5EasyNetQ.Common", "01-RabbitMQ\3-4-5-6-Exchange\5_Topics-Receiving messages based on a pattern\EasyNetQ\5EasyNetQ.Common\5EasyNetQ.Common.csproj", "{FFDAE412-E36A-D8E5-E8FE-0BFC5EC9B20D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5EasyNetQ.ProducerTopic", "01-RabbitMQ\3-4-5-6-Exchange\5_Topics-Receiving messages based on a pattern\EasyNetQ\5EasyNetQ.ProducerTopic\5EasyNetQ.ProducerTopic.csproj", "{54B37579-F813-2FB9-1318-B57FE9187822}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5WasyNetQ.PurchaseOrderTopicSubscriber", "01-RabbitMQ\3-4-5-6-Exchange\5_Topics-Receiving messages based on a pattern\EasyNetQ\5WasyNetQ.PurchaseOrderTopicSubscriber\5WasyNetQ.PurchaseOrderTopicSubscriber.csproj", "{11E51114-9A99-F316-F962-9D86F0FB8E1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -157,6 +215,98 @@ Global
 		{B427E845-43F5-4D1D-847A-143A2C861EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B427E845-43F5-4D1D-847A-143A2C861EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B427E845-43F5-4D1D-847A-143A2C861EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713FB884-E653-DF07-61D6-722FD8567D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713FB884-E653-DF07-61D6-722FD8567D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713FB884-E653-DF07-61D6-722FD8567D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713FB884-E653-DF07-61D6-722FD8567D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2358AB2A-2957-083C-95E5-D71EAFA71D6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2358AB2A-2957-083C-95E5-D71EAFA71D6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2358AB2A-2957-083C-95E5-D71EAFA71D6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2358AB2A-2957-083C-95E5-D71EAFA71D6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E7A662-E0CF-3545-3243-2014F9717B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E7A662-E0CF-3545-3243-2014F9717B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E7A662-E0CF-3545-3243-2014F9717B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E7A662-E0CF-3545-3243-2014F9717B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78DBAB4E-9327-8C9B-A0BD-A7B772DC0435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78DBAB4E-9327-8C9B-A0BD-A7B772DC0435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78DBAB4E-9327-8C9B-A0BD-A7B772DC0435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78DBAB4E-9327-8C9B-A0BD-A7B772DC0435}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76848E13-438F-7374-38F4-8492914B8FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76848E13-438F-7374-38F4-8492914B8FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76848E13-438F-7374-38F4-8492914B8FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76848E13-438F-7374-38F4-8492914B8FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68C44E80-D2BC-69D5-2062-DCBC03F4B0BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68C44E80-D2BC-69D5-2062-DCBC03F4B0BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68C44E80-D2BC-69D5-2062-DCBC03F4B0BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68C44E80-D2BC-69D5-2062-DCBC03F4B0BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A487E753-05A0-0287-BE5B-1E30025058DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A487E753-05A0-0287-BE5B-1E30025058DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A487E753-05A0-0287-BE5B-1E30025058DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A487E753-05A0-0287-BE5B-1E30025058DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A34231C-68A6-0614-C21F-112237AFD3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A34231C-68A6-0614-C21F-112237AFD3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A34231C-68A6-0614-C21F-112237AFD3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A34231C-68A6-0614-C21F-112237AFD3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{410D8493-4B77-0CA5-5452-0DEAD4E99DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{410D8493-4B77-0CA5-5452-0DEAD4E99DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{410D8493-4B77-0CA5-5452-0DEAD4E99DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{410D8493-4B77-0CA5-5452-0DEAD4E99DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74D0F1B-ED2A-2D29-C010-19C4174E100C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74D0F1B-ED2A-2D29-C010-19C4174E100C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74D0F1B-ED2A-2D29-C010-19C4174E100C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74D0F1B-ED2A-2D29-C010-19C4174E100C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{032FB9F3-14B2-20B0-A95E-541F0EBBBD87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{032FB9F3-14B2-20B0-A95E-541F0EBBBD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{032FB9F3-14B2-20B0-A95E-541F0EBBBD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{032FB9F3-14B2-20B0-A95E-541F0EBBBD87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43F13DB-40D5-D0DD-4840-281B27B9AB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43F13DB-40D5-D0DD-4840-281B27B9AB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43F13DB-40D5-D0DD-4840-281B27B9AB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43F13DB-40D5-D0DD-4840-281B27B9AB4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E81CD1D3-F26C-DD6D-78CC-CE1DBD9BFC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E81CD1D3-F26C-DD6D-78CC-CE1DBD9BFC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E81CD1D3-F26C-DD6D-78CC-CE1DBD9BFC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E81CD1D3-F26C-DD6D-78CC-CE1DBD9BFC6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{520EF616-9462-74E1-8C22-F8F2FBA09230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{520EF616-9462-74E1-8C22-F8F2FBA09230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{520EF616-9462-74E1-8C22-F8F2FBA09230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{520EF616-9462-74E1-8C22-F8F2FBA09230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73E67D2-4F2D-0CC6-4949-1961BDEFE43D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73E67D2-4F2D-0CC6-4949-1961BDEFE43D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73E67D2-4F2D-0CC6-4949-1961BDEFE43D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73E67D2-4F2D-0CC6-4949-1961BDEFE43D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05057281-042F-70B2-EECC-FA250FA04B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05057281-042F-70B2-EECC-FA250FA04B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05057281-042F-70B2-EECC-FA250FA04B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05057281-042F-70B2-EECC-FA250FA04B12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CEBE01F-710E-3E42-DD5E-356949993BF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CEBE01F-710E-3E42-DD5E-356949993BF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CEBE01F-710E-3E42-DD5E-356949993BF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CEBE01F-710E-3E42-DD5E-356949993BF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF4CB734-1E00-DB0A-1E3F-847C84078CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4CB734-1E00-DB0A-1E3F-847C84078CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4CB734-1E00-DB0A-1E3F-847C84078CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4CB734-1E00-DB0A-1E3F-847C84078CF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CA2C2E4-3187-B240-E9F6-E053805852AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CA2C2E4-3187-B240-E9F6-E053805852AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA2C2E4-3187-B240-E9F6-E053805852AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CA2C2E4-3187-B240-E9F6-E053805852AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D0FF0E-CA5D-D365-BBAA-32AD33470D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D0FF0E-CA5D-D365-BBAA-32AD33470D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D0FF0E-CA5D-D365-BBAA-32AD33470D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D0FF0E-CA5D-D365-BBAA-32AD33470D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFDAE412-E36A-D8E5-E8FE-0BFC5EC9B20D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFDAE412-E36A-D8E5-E8FE-0BFC5EC9B20D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFDAE412-E36A-D8E5-E8FE-0BFC5EC9B20D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFDAE412-E36A-D8E5-E8FE-0BFC5EC9B20D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B37579-F813-2FB9-1318-B57FE9187822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B37579-F813-2FB9-1318-B57FE9187822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B37579-F813-2FB9-1318-B57FE9187822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B37579-F813-2FB9-1318-B57FE9187822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11E51114-9A99-F316-F962-9D86F0FB8E1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11E51114-9A99-F316-F962-9D86F0FB8E1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11E51114-9A99-F316-F962-9D86F0FB8E1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11E51114-9A99-F316-F962-9D86F0FB8E1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -199,6 +349,35 @@ Global
 		{7AF023DD-8641-4F13-B8D1-21C7B520BB40} = {51300405-5343-4CBC-98D1-69B276E52982}
 		{DF4071EC-BFDA-4694-A997-AE1F7D27C682} = {10685981-893C-42DF-985E-8C4A32ED5ECD}
 		{242A63CD-ED8B-4200-87F2-5D33E70F16F1} = {C9955F5F-D0BA-42B4-9373-9110E38A2C6A}
+		{423A2025-7B34-44AA-9B92-1FE0E95939F8} = {7AF023DD-8641-4F13-B8D1-21C7B520BB40}
+		{4D90E419-B567-49A7-A591-BD90B17FD891} = {7AF023DD-8641-4F13-B8D1-21C7B520BB40}
+		{CFE0C339-2289-4278-A2E2-61070F7B9E4B} = {DF4071EC-BFDA-4694-A997-AE1F7D27C682}
+		{2B1A7F2A-4F63-4032-881E-0F9502C9AA2B} = {DF4071EC-BFDA-4694-A997-AE1F7D27C682}
+		{F58C4BC4-8F29-4535-8F85-844E7B484A6A} = {242A63CD-ED8B-4200-87F2-5D33E70F16F1}
+		{6573B514-8DC6-4056-9911-794A30FDF0CE} = {242A63CD-ED8B-4200-87F2-5D33E70F16F1}
+		{713FB884-E653-DF07-61D6-722FD8567D30} = {74FAEBBF-4D26-4800-AFD1-C4EB816BA874}
+		{2358AB2A-2957-083C-95E5-D71EAFA71D6D} = {74FAEBBF-4D26-4800-AFD1-C4EB816BA874}
+		{09E7A662-E0CF-3545-3243-2014F9717B07} = {74FAEBBF-4D26-4800-AFD1-C4EB816BA874}
+		{78DBAB4E-9327-8C9B-A0BD-A7B772DC0435} = {423A2025-7B34-44AA-9B92-1FE0E95939F8}
+		{76848E13-438F-7374-38F4-8492914B8FDF} = {423A2025-7B34-44AA-9B92-1FE0E95939F8}
+		{68C44E80-D2BC-69D5-2062-DCBC03F4B0BA} = {423A2025-7B34-44AA-9B92-1FE0E95939F8}
+		{A487E753-05A0-0287-BE5B-1E30025058DE} = {4D90E419-B567-49A7-A591-BD90B17FD891}
+		{5A34231C-68A6-0614-C21F-112237AFD3BF} = {4D90E419-B567-49A7-A591-BD90B17FD891}
+		{410D8493-4B77-0CA5-5452-0DEAD4E99DC1} = {4D90E419-B567-49A7-A591-BD90B17FD891}
+		{F74D0F1B-ED2A-2D29-C010-19C4174E100C} = {5A6F8BB8-1A32-4D8B-8190-31BB47FA91AB}
+		{032FB9F3-14B2-20B0-A95E-541F0EBBBD87} = {5A6F8BB8-1A32-4D8B-8190-31BB47FA91AB}
+		{E43F13DB-40D5-D0DD-4840-281B27B9AB4C} = {5A6F8BB8-1A32-4D8B-8190-31BB47FA91AB}
+		{E81CD1D3-F26C-DD6D-78CC-CE1DBD9BFC6D} = {CFE0C339-2289-4278-A2E2-61070F7B9E4B}
+		{520EF616-9462-74E1-8C22-F8F2FBA09230} = {CFE0C339-2289-4278-A2E2-61070F7B9E4B}
+		{A73E67D2-4F2D-0CC6-4949-1961BDEFE43D} = {CFE0C339-2289-4278-A2E2-61070F7B9E4B}
+		{05057281-042F-70B2-EECC-FA250FA04B12} = {2B1A7F2A-4F63-4032-881E-0F9502C9AA2B}
+		{1CEBE01F-710E-3E42-DD5E-356949993BF4} = {2B1A7F2A-4F63-4032-881E-0F9502C9AA2B}
+		{AF4CB734-1E00-DB0A-1E3F-847C84078CF6} = {2B1A7F2A-4F63-4032-881E-0F9502C9AA2B}
+		{0CA2C2E4-3187-B240-E9F6-E053805852AD} = {CF212254-0BAC-45F0-A8F3-E3D072285E79}
+		{C8D0FF0E-CA5D-D365-BBAA-32AD33470D1B} = {CF212254-0BAC-45F0-A8F3-E3D072285E79}
+		{FFDAE412-E36A-D8E5-E8FE-0BFC5EC9B20D} = {CF212254-0BAC-45F0-A8F3-E3D072285E79}
+		{54B37579-F813-2FB9-1318-B57FE9187822} = {CF212254-0BAC-45F0-A8F3-E3D072285E79}
+		{11E51114-9A99-F316-F962-9D86F0FB8E1A} = {CF212254-0BAC-45F0-A8F3-E3D072285E79}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C9A5D53-7FE6-41D2-BECC-76F48A1A70C0}

@@ -1,5 +1,6 @@
 ﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using System;
 using System.ComponentModel;
 using System.Reflection;
 using System.Text;
