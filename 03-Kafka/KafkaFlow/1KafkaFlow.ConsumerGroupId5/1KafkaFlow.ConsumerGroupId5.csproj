@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>_1KafkaFlow.ConsumerGroupId5</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="KafkaFlow" Version="3.0.10" />
+    <PackageReference Include="KafkaFlow.Extensions.Hosting" Version="3.0.10" />
+    <PackageReference Include="KafkaFlow.LogHandler.Microsoft" Version="3.0.10" />
+    <PackageReference Include="KafkaFlow.Microsoft.DependencyInjection" Version="3.0.10" />
+    <PackageReference Include="KafkaFlow.Serializer.JsonCore" Version="3.0.10" />
+    <PackageReference Include="KafkaFlow.TypedHandler" Version="2.5.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\1KafkaFlow.Common\1KafkaFlow.Common.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net9.0</TargetFramework>
+		<RootNamespace>_2KafkaFlow.AnotherConsumer</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+			<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+		</Content>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="KafkaFlow" Version="3.0.10" />
+		<PackageReference Include="KafkaFlow.Extensions.Hosting" Version="3.0.10" />
+		<PackageReference Include="KafkaFlow.LogHandler.Microsoft" Version="3.0.10" />
+		<PackageReference Include="KafkaFlow.Microsoft.DependencyInjection" Version="3.0.10" />
+		<PackageReference Include="KafkaFlow.Serializer.JsonCore" Version="3.0.10" />
+		<PackageReference Include="KafkaFlow.TypedHandler" Version="2.5.1" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.0" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\2Kafka.Confluent.ASPNETCoreExample\2Kafka.Confluent.ASPNETCoreExample.csproj" />
+	</ItemGroup>
+</Project>
