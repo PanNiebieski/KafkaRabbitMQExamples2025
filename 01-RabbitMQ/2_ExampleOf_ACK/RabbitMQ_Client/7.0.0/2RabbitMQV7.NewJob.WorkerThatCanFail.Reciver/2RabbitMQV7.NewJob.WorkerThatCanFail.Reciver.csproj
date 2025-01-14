@@ -12,6 +12,7 @@
 		<PackageReference Include="RabbitMQ.Client" Version="7.0.0" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\2RabbitMQ.NewJob.Common\NewJob.Common.csproj" />
+	  <ProjectReference Include="..\..\..\NewJob.Common\NewJob.Common.csproj" />
 	</ItemGroup>
+
 </Project>
