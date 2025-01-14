@@ -5,17 +5,17 @@ namespace _2.KafkaFlow.ASPNETCoreExample;
 
 public class KafkaFlowMessageHandler : IMessageHandler<MyMessage>
 {
-    //private readonly InMemoryMessageStore _messageStore;
+    private readonly InMemoryMessageStore _messageStore;
 
-    //public KafkaFlowMessageHandler(InMemoryMessageStore messageStore)
-    //{
-    //    _messageStore = messageStore;
-    //}
+    public KafkaFlowMessageHandler(InMemoryMessageStore messageStore)
+    {
+        _messageStore = messageStore;
+    }
 
     public async Task Handle(IMessageContext context, MyMessage myMessage)
     {
         //var myMessage = JsonSerializer.Deserialize<MyMessage>(message);
-        //_messageStore.Write(myMessage);
+        _messageStore.Write(myMessage);
 
         Console.WriteLine($"Consumed message: {myMessage.Text}");
 

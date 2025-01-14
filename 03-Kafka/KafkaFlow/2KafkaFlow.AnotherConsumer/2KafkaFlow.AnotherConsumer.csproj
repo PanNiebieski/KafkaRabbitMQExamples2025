@@ -25,6 +25,7 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.0" />
 	</ItemGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\2Kafka.Confluent.ASPNETCoreExample\2Kafka.Confluent.ASPNETCoreExample.csproj" />
+		<ProjectReference Include="..\2.KafkaFlow.ASPNETCoreExample\2.KafkaFlow.ASPNETCoreExample.csproj" />
 	</ItemGroup>
+
 </Project>

@@ -1,5 +1,4 @@
-﻿using _2Kafka.Confluent.ASPNETCoreExample;
-using KafkaFlow;
+﻿using KafkaFlow;
 using System.Text.Json;
 
 namespace _2.KafkaFlow.ASPNETCoreExample;
