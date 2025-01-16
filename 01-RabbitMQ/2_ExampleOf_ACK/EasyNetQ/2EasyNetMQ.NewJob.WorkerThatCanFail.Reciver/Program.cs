@@ -20,10 +20,8 @@ using (var bus = RabbitHutch.CreateBus(connectionString))
 
 static void HandleMessage(Job job)
 {
-
     if (job.ShouldFaillOnWorkerTwo == false)
     {
-
         // Note: EasyNetQ automatically ACKs messages by default.
 
         Thread.Sleep(job.HowManySecondsWillJobTake * 500);
@@ -41,11 +39,9 @@ static void HandleMessage(Job job)
         Console.WriteLine($" [x] Fail {job.Type}");
         Console.ForegroundColor = ConsoleColor.Gray;
 
-
         // THIS WILL SEND MESSAGE TO DEAD-LETTER QUEQUE
         // DEFAULT NAME OF THIS QUEQUE IS
         // EasyNetQ_Default_Error_Queue
         throw new Exception("JOB FAILED");
     }
-
 }

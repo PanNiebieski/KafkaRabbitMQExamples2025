@@ -30,24 +30,24 @@ using (var activator = new BuiltinHandlerActivator())
             case 'a':
                 await SendTradeRecordedEventAsync(bus);
                 break;
+
             case 'b':
                 await SendDocumentSavedAsync(bus);
                 break;
+
             case 'c':
                 await SendUserLoggedEventAsync(bus);
                 break;
+
             case 'q':
                 break;
+
             default:
                 Console.WriteLine("There's no option ({0})", keyChar);
                 break;
         }
     }
-
 }
-
-
-
 
 async Task SendTradeRecordedEventAsync(IBus bus)
 {

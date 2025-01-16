@@ -33,7 +33,6 @@ var purchaseOrder2 = new PurchaseOrder
     PoNumber = "HB123"
 };
 
-
 using (var bus = RabbitHutch.CreateBus("host=localhost"))
 {
     Console.WriteLine("Publishing messages with topic publish.");

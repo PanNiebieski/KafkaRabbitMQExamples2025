@@ -23,11 +23,9 @@ using (var channel = connection.CreateModel())
     Console.Error.WriteLine("Usage: {0} [binding_key...]",
                                     usermessageBindingKey);
 
-
     channel.QueueBind(queue: queueName,
                           exchange: "R6.05",
                           routingKey: usermessageBindingKey);
-
 
     Console.WriteLine(" [*] Waiting for messages. To exit press CTRL+C");
 

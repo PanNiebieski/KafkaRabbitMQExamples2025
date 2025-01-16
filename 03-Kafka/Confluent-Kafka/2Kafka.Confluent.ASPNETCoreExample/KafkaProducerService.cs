@@ -1,6 +1,5 @@
 ﻿using Confluent.Kafka;
 using Microsoft.Extensions.Options;
-using System.Runtime;
 using System.Text.Json;
 
 namespace _2Kafka.Confluent.ASPNETCoreExample;

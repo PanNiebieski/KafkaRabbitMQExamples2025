@@ -17,4 +17,3 @@ public class DocumentSavedEvent
     public Guid Id { get => id; set => id = value; }
     public string FileName { get => filename; set => filename = value; }
 }
-

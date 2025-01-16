@@ -20,10 +20,7 @@ using (var channel = connection.CreateModel())
         Console.WriteLine(" [x] Sent {0}", message);
         Console.ReadLine();
     }
-
 }
 
 Console.WriteLine(" Press [enter] to exit.");
 Console.ReadLine();
-
-

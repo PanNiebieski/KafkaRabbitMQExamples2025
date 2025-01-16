@@ -1,17 +1,10 @@
 ﻿using _3IntegrationProblem._0Messages;
 using Rebus.Handlers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 
 internal class ExternalAPIErrorHandler : IHandleMessages<ExternalAPIError>
 {
     public ExternalAPIErrorHandler()
     {
-
     }
 
     public async Task Handle(ExternalAPIError message)
@@ -24,6 +17,4 @@ internal class ExternalAPIErrorHandler : IHandleMessages<ExternalAPIError>
         Console.WriteLine("=======================");
         Console.WriteLine("");
     }
-
 }
-

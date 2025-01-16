@@ -7,7 +7,6 @@ var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
 using (var channel = connection.CreateModel())
 {
-
     channel.ExchangeDeclare(exchange: "RabbitMqDotNet6Tutorial.04",
         type: ExchangeType.Direct);
 
@@ -40,13 +39,9 @@ using (var channel = connection.CreateModel())
                 basicProperties: null, body: body);
 
             WriteMessageOnConsole($"{usermessage}:{key.GetDescription<RoutingKey>()}");
-
         }
-
     }
-
 }
-
 
 void WriteMessageOnConsole(string message)
 {
@@ -61,8 +56,10 @@ public enum RoutingKey
 {
     [Description("Email")]
     Email = 1,
+
     [Description("Mail")]
     Mail = 2,
+
     [Description("Test")]
     Test = 3
 }
@@ -96,5 +93,3 @@ public static class Helper
         return enumerationValue.ToString();
     }
 }
-
-

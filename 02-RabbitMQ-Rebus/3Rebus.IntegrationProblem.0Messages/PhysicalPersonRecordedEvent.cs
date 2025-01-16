@@ -19,6 +19,4 @@ public class PhysicalPersonRecordedEvent : IPhysicalPersonEvents
     public string LastName { get; set; }
 
     public string Pesel { get; set; }
-
-
 }

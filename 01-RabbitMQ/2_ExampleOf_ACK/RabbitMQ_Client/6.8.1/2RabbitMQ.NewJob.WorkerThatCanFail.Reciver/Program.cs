@@ -7,7 +7,6 @@ Console.WriteLine(AppInfo.Value);
 Console.Title = "RabbitMqDotNet6Tutorial.02.WorkerThatCanFail";
 Console.WriteLine("RabbitMqDotNet6Tutorial.02.WorkerThatCanFail");
 
-
 Console.ForegroundColor = GetRandomConsoleColor();
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
@@ -33,7 +32,6 @@ using (var connection = factory.CreateConnection())
                 Console.WriteLine(" [>] Received {0}", job.Message);
                 Console.WriteLine(" [>] Received {0}", job.Type);
 
-
                 if (job.ShouldFaillOnWorkerTwo == false)
                 {
                     Thread.Sleep(job.HowManySecondsWillJobTake * 500);
@@ -48,12 +46,8 @@ using (var connection = factory.CreateConnection())
                     Console.WriteLine($" [x] Fail {job.Message}");
                     Console.WriteLine($" [x] Fail {job.Type}");
                     Console.ForegroundColor = ConsoleColor.Gray;
-
                 }
-
-
             };
-
 
             channel.BasicConsume(queue: "R6.02", autoAck: false,
                 consumer: consumer);
@@ -63,14 +57,9 @@ using (var connection = factory.CreateConnection())
         }
     }
 
-
 ConsoleColor GetRandomConsoleColor()
 {
     Random _random = new Random();
     var consoleColors = Enum.GetValues(typeof(ConsoleColor));
     return (ConsoleColor)(consoleColors.GetValue(_random.Next(consoleColors.Length)) ?? ConsoleColor.White);
 }
-
-
-
-

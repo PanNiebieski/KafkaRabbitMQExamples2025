@@ -1,11 +1,11 @@
 ﻿using _3IntegrationProblem._0Messages;
+using _3IntegrationProblem.Confirmation;
 using Rebus.Activation;
 using Rebus.Config;
 using Rebus.Logging;
-using _3IntegrationProblem.Confirmation;
-using Rebus.Routing.TypeBased;
-using Rebus.Retry.Simple;
 using Rebus.Persistence.FileSystem;
+using Rebus.Retry.Simple;
+using Rebus.Routing.TypeBased;
 
 Console.Title = "This send message to IntegrationProblem.ExternalThirdAPI";
 Console.WriteLine(AppInfo.Value);
@@ -17,12 +17,12 @@ activator.Register((bus, context) => new PhysicalPersonRecordedEventHandler2(bus
 
 Configure.With(activator)
     .Logging(l => l.ColoredConsole(minLevel: LogLevel.Error))
-    .Transport(t => t.UseRabbitMq("amqp://guest:guest@localhost:5672", 
+    .Transport(t => t.UseRabbitMq("amqp://guest:guest@localhost:5672",
             "3IntegrationProblem.Server.Reciver.Confirmation"))
     .Routing(r => r.TypeBased()
         .Map<PhysicalPersonRecordedEvent>("3IntegrationProblem.Server.Reciver.Confirmation"))
 
-    .Options(b => b.SimpleRetryStrategy(maxDeliveryAttempts:1,secondLevelRetriesEnabled: true))
+    .Options(b => b.SimpleRetryStrategy(maxDeliveryAttempts: 1, secondLevelRetriesEnabled: true))
     .Timeouts(t =>
     {
         t.UseFileSystem(AppInfo.PathToTimeOut);
@@ -34,9 +34,6 @@ await activator.Bus.Subscribe<PhysicalPersonRecordedEvent>();
 
 Console.WriteLine("This will recive PhysicalPersonRecordedEvent");
 Console.WriteLine("This send message to IntegrationProblem.ExternalThirdAPI");
-
-
-
 
 while (true)
 {

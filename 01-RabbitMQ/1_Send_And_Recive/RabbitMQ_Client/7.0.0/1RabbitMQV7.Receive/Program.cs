@@ -1,7 +1,6 @@
-﻿using RabbitMQ.Client.Events;
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 using System.Text;
-using System.Threading.Channels;
 
 Console.WriteLine(AppInfo.Value);
 Console.Title = "1RabbitMQV7.Receive";
@@ -14,7 +13,6 @@ using (var channel = await connection.CreateChannelAsync())
 {
     await channel.QueueDeclareAsync(queue: "R7.01", durable: false,
         exclusive: false, autoDelete: false, arguments: null);
-
 
     Console.WriteLine(" Waiting for messages.");
 
@@ -36,7 +34,6 @@ using (var channel = await connection.CreateChannelAsync())
     await channel.BasicConsumeAsync(queue: "R7.01",
     autoAck: true, consumer: consumer);
 
-
     char key = 'z';
 
     while (key != 'q' && key != 'Q')
@@ -44,7 +41,4 @@ using (var channel = await connection.CreateChannelAsync())
         Console.WriteLine(" Press [q] or [Q] to exit.");
         key = Console.ReadKey().KeyChar;
     }
-
 }
-
-

@@ -18,7 +18,6 @@ using (var channel = connection.CreateModel())
 
     while (true)
     {
-
         Console.WriteLine("Write what you want to send");
         Console.WriteLine("Write nothing to exit.");
 
@@ -40,5 +39,4 @@ using (var channel = connection.CreateModel())
         Console.ForegroundColor = ConsoleColor.Gray;
         Console.WriteLine("");
     }
-
 }

@@ -12,4 +12,3 @@ public class MessageRequest
 
     public DateTime StartProducer { get; set; }
 }
-

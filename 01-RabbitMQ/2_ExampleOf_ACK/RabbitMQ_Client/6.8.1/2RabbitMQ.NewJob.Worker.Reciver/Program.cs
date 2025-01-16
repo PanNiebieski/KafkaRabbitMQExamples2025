@@ -7,7 +7,6 @@ Console.WriteLine(AppInfo.Value);
 Console.Title = "RabbitMqDotNet6Tutorial.02.Worker";
 Console.WriteLine("RabbitMqDotNet6Tutorial.02.Worker");
 
-
 Console.ForegroundColor = GetRandomConsoleColor();
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = factory.CreateConnection())
@@ -37,9 +36,7 @@ using (var channel = connection.CreateModel())
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine(" [>] Done");
         Console.ForegroundColor = ConsoleColor.Gray;
-
     };
-
 
     channel.BasicConsume(queue: "R6.02", autoAck: false,
         consumer: consumer);
@@ -48,15 +45,9 @@ using (var channel = connection.CreateModel())
     Console.ReadLine();
 }
 
-
-
 ConsoleColor GetRandomConsoleColor()
 {
     Random _random = new Random();
     var consoleColors = Enum.GetValues(typeof(ConsoleColor));
     return (ConsoleColor)(consoleColors.GetValue(_random.Next(consoleColors.Length)) ?? ConsoleColor.White);
 }
-
-
-
-

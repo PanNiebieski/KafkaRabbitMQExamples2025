@@ -14,7 +14,6 @@ var server = builder.Configuration["KafkaConfig:BootstrapServers"];
 var topic = builder.Configuration["KafkaConfig:Topic"];
 var groupid = builder.Configuration["KafkaConfig:GroupId"];
 
-
 builder.Services
     .AddKafka(kafka => kafka
         .AddCluster(cluster => cluster

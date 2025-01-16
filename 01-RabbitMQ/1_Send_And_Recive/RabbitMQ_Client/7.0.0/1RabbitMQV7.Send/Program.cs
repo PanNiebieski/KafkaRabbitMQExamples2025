@@ -5,7 +5,6 @@ Console.WriteLine(AppInfo.Value);
 Console.Title = "1RabbitMQV7.Send";
 Console.WriteLine("1RabbitMQV7.Send");
 
-
 var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = await factory.CreateConnectionAsync())
 using (var channel = await connection.CreateChannelAsync())
@@ -18,8 +17,6 @@ using (var channel = await connection.CreateChannelAsync())
 
     while (true)
     {
-
-
         Console.WriteLine("Write what you want to send");
         Console.WriteLine("Write nothing to exit.");
 
@@ -34,14 +31,10 @@ using (var channel = await connection.CreateChannelAsync())
         await channel.BasicPublishAsync(exchange: "",
             routingKey: "R7.01", body);
 
-
         Console.WriteLine("");
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("\tSent {0}", message);
         Console.ForegroundColor = ConsoleColor.Gray;
         Console.WriteLine("");
     }
-
-
 }
-

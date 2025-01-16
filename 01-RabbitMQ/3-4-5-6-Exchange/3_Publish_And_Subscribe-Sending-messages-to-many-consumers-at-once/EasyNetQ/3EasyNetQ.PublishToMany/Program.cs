@@ -13,7 +13,6 @@ using (var bus = RabbitHutch.CreateBus("host=localhost"))
     Console.ReadLine();
 }
 
-
 static void AddCustom(IBus bus)
 {
     var exchange = bus.Advanced.ExchangeDeclare("3EasyNetQ.PublishToMany.Exchange", ExchangeType.Fanout);

@@ -21,7 +21,6 @@ namespace _3IntegrationProblem.Confirmation
         }
     }
 
-
     public class ResponseFromExternalApi
     {
         public bool Confirmed { get; set; }

@@ -18,7 +18,6 @@ while (true)
 
     using (var bus = RabbitHutch.CreateBus("host=localhost"))
     {
-
         await bus.SendReceive.SendAsync<Job>("2EasyNetMQ.NewJob.Queue"
             , job
         );
@@ -27,7 +26,6 @@ while (true)
     string message = JsonConvert.SerializeObject(job);
     WriteMessageOnConsole(message);
 }
-
 
 Job CreateJob(string usertext)
 {
@@ -43,7 +41,6 @@ Job CreateJob(string usertext)
         HowManySecondsWillJobTake = howManySecondsWillJobTake,
         Type = JobType.SendEmail,
         ShouldFaillOnWorkerTwo = shouldFail
-
     };
 }
 

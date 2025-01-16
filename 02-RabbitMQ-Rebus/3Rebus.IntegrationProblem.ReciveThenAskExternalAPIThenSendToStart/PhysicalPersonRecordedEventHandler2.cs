@@ -4,16 +4,12 @@ using Rebus.Exceptions;
 using Rebus.Handlers;
 using Rebus.Messages;
 using Rebus.Retry.Simple;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace _3IntegrationProblem.Confirmation
 {
-    public class PhysicalPersonRecordedEventHandler2 : 
+    public class PhysicalPersonRecordedEventHandler2 :
         IHandleMessages<PhysicalPersonRecordedEvent>, IHandleMessages<IFailed<PhysicalPersonRecordedEvent>>
     {
         private IBus _bus;
@@ -36,14 +32,14 @@ namespace _3IntegrationProblem.Confirmation
 
             ResponseFromExternalApi desResponse = null;
 
-                var response = await _http.PostAsync("https://localhost:7089/check", content);
-                response.EnsureSuccessStatusCode();
+            var response = await _http.PostAsync("https://localhost:7089/check", content);
+            response.EnsureSuccessStatusCode();
 
-                var responseContent = await response.Content.ReadAsStringAsync();
-                var options = new JsonSerializerOptions
-                {
-                    PropertyNameCaseInsensitive = true
-                };
+            var responseContent = await response.Content.ReadAsStringAsync();
+            var options = new JsonSerializerOptions
+            {
+                PropertyNameCaseInsensitive = true
+            };
 
             desResponse = JsonSerializer.Deserialize<ResponseFromExternalApi>
                                                    (responseContent, options);
@@ -61,7 +57,6 @@ namespace _3IntegrationProblem.Confirmation
                 await _bus.Publish(new PhysicalPersonRejectedEvent(message.Id));
             }
             Console.ResetColor();
-
         }
 
         public async Task Handle(IFailed<PhysicalPersonRecordedEvent> failed)
@@ -75,7 +70,6 @@ namespace _3IntegrationProblem.Confirmation
             await _bus.Publish(new ExternalAPIError(message.Id,
                 failed.ErrorDescription,
                 message));
-
 
             const int maxDeferCount = 5;
             var deferCount = Convert.ToInt32(failed.Headers.GetValueOrDefault(Headers.DeferCount));

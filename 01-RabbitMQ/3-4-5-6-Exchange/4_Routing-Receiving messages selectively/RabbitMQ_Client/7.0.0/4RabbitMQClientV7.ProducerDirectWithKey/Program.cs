@@ -7,7 +7,6 @@ var factory = new ConnectionFactory() { HostName = "localhost" };
 using (var connection = await factory.CreateConnectionAsync())
 using (var channel = await connection.CreateChannelAsync())
 {
-
     await channel.ExchangeDeclareAsync(exchange: "R7.04",
         type: ExchangeType.Direct);
 
@@ -39,13 +38,9 @@ using (var channel = await connection.CreateChannelAsync())
                 routingKey: key.GetDescription<RoutingKey>(), body: body);
 
             WriteMessageOnConsole($"{usermessage}:{key.GetDescription<RoutingKey>()}");
-
         }
-
     }
-
 }
-
 
 void WriteMessageOnConsole(string message)
 {
@@ -60,8 +55,10 @@ public enum RoutingKey
 {
     [Description("Email")]
     Email = 1,
+
     [Description("Mail")]
     Mail = 2,
+
     [Description("Test")]
     Test = 3
 }
@@ -95,5 +92,3 @@ public static class Helper
         return enumerationValue.ToString();
     }
 }
-
-

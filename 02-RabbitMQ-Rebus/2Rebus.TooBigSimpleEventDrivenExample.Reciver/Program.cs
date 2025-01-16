@@ -1,7 +1,7 @@
-﻿using Rebus.Activation;
+﻿using _2Rebus.TooBigSimpleEventDrivenExample._0Messages;
+using Rebus.Activation;
 using Rebus.Config;
 using Rebus.Routing.TypeBased;
-using _2Rebus.TooBigSimpleEventDrivenExample._0Messages;
 
 Console.WriteLine(AppInfo.Value);
 

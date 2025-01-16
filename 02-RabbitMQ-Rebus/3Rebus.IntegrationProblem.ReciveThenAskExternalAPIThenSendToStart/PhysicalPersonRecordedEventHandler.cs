@@ -1,8 +1,8 @@
 ﻿using _3IntegrationProblem._0Messages;
+using _3IntegrationProblem.Confirmation;
 using Rebus.Bus;
 using Rebus.Handlers;
 using System.Text;
-using _3IntegrationProblem.Confirmation;
 using System.Text.Json;
 
 public class PhysicalPersonRecordedEventHandler : IHandleMessages<PhysicalPersonRecordedEvent>
@@ -68,6 +68,5 @@ public class PhysicalPersonRecordedEventHandler : IHandleMessages<PhysicalPerson
             await _bus.Publish(new PhysicalPersonRejectedEvent(message.Id));
         }
         Console.ResetColor();
-
     }
 }

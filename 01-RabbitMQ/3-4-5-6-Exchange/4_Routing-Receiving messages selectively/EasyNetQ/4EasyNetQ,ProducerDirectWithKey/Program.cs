@@ -2,14 +2,11 @@
 using EasyNetQ.Topology;
 using System.ComponentModel;
 using System.Reflection;
-using System.Text;
-using System.Threading.Channels;
 
 var advancedBus = RabbitHutch.CreateBus("host=localhost").Advanced;
 
 var queue = advancedBus.QueueDeclare("4EasyNetQ,ProducerDirectWithKey.Queue", true, false, false);
 var exchange = advancedBus.ExchangeDeclare("4EasyNetQ,ProducerDirectWithKey.Exchange", ExchangeType.Direct);
-
 
 while (true)
 {
@@ -40,12 +37,10 @@ while (true)
             new Message<string>(usermessage));
 
         WriteMessageOnConsole($"{usermessage}:{key.GetDescription<RoutingKey>()}");
-
     }
 }
 
 advancedBus.Dispose();
-
 
 void WriteMessageOnConsole(string message)
 {
@@ -56,22 +51,17 @@ void WriteMessageOnConsole(string message)
     Console.WriteLine("");
 }
 
-
-
-
-
-
 public enum RoutingKey
 {
     [Description("Email")]
     Email = 1,
+
     [Description("Mail")]
     Mail = 2,
+
     [Description("Test")]
     Test = 3
 }
-
-
 
 public static class Helper
 {

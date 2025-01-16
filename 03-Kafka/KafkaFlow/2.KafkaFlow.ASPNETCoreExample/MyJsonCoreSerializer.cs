@@ -1,6 +1,6 @@
 ﻿using KafkaFlow;
-using System.Text.Json;
 using System.Text;
+using System.Text.Json;
 
 public class MyJsonCoreSerializer : ISerializer
 {

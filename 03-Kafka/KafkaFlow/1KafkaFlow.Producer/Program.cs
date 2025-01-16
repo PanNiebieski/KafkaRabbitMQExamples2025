@@ -28,7 +28,6 @@ app.MapPost("/add", RequestHandler.HandleAsync);
 
 app.Run();
 
-
 // Handler
 public static class RequestHandler
 {

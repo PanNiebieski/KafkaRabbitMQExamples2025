@@ -29,8 +29,10 @@ public enum RoutingKey
 {
     [Description("Email")]
     Email = 1,
+
     [Description("Mail")]
     Mail = 2,
+
     [Description("Test")]
     Test = 3
 }
@@ -64,5 +66,3 @@ public static class Helper
         return enumerationValue.ToString();
     }
 }
-
-

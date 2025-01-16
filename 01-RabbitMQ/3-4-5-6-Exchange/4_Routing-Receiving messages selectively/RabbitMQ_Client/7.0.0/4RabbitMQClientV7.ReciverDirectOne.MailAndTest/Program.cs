@@ -38,14 +38,14 @@ using (var channel = await connection.CreateChannelAsync())
     Console.ReadLine();
 }
 
-
-
 public enum RoutingKey
 {
     [Description("Email")]
     Email = 1,
+
     [Description("Mail")]
     Mail = 2,
+
     [Description("Test")]
     Test = 3
 }

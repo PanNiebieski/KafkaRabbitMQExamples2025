@@ -23,11 +23,9 @@ using (var channel = await connection.CreateChannelAsync())
     Console.Error.WriteLine("Usage: {0} [binding_key...]",
                                     usermessageBindingKey);
 
-
     await channel.QueueBindAsync(queue: queueName,
                           exchange: "R7.05",
                           routingKey: usermessageBindingKey);
-
 
     Console.WriteLine(" [*] Waiting for messages. To exit press CTRL+C");
 

@@ -1,6 +1,5 @@
 ﻿using _1Kafka.Confluent.Common;
 using Confluent.Kafka;
-using System.Net;
 using System.Text.Json;
 
 int unique = 5;

@@ -25,4 +25,3 @@ static void AddCustom(IBus bus)
         durable: true, exclusive: false, autoDelete: true);
     bus.Advanced.Bind(exchange, queue, "#");
 }
-

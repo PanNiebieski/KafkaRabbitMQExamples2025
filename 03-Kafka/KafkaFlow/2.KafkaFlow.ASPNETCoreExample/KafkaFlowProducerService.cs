@@ -1,6 +1,5 @@
 ﻿using KafkaFlow;
 using KafkaFlow.Producers;
-using System.Text.Json;
 
 namespace _2.KafkaFlow.ASPNETCoreExample;
 

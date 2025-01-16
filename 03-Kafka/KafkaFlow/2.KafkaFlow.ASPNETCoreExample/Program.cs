@@ -1,8 +1,5 @@
 using _2.KafkaFlow.ASPNETCoreExample;
 using KafkaFlow;
-using KafkaFlow.Producers;
-using KafkaFlow.Serializer;
-using System.Text.RegularExpressions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -93,7 +90,6 @@ builder.Services.AddKafkaFlowHostedService(config => config
 builder.Services.AddSingleton<InMemoryMessageStore>();
 builder.Services.AddScoped<IKafkaFlowProducerService, KafkaFlowProducerService>();
 
-
 var app = builder.Build();
 
 // Define endpoints
@@ -106,7 +102,6 @@ app.MapGet("/m/{message}", async (string message, IKafkaFlowProducerService prod
 });
 
 app.Run();
-
 
 static bool IsPeakHour(DateTime currentTimeUtc)
 {

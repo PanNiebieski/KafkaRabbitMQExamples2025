@@ -9,7 +9,6 @@ var connectionString = "host=localhost"; // RabbitMQ connection string
 
 using (var bus = RabbitHutch.CreateBus(connectionString))
 {
-
     var queueName = "2EasyNetMQ.NewJob.Queue"; // Replace with your queue name
     bus.Advanced.QueueDeclare(queueName, durable: true, false, false);
 

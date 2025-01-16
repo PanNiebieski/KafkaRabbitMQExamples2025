@@ -41,9 +41,7 @@ using (var channel = connection.CreateModel())
 
         WriteMessageOnConsole(message);
     }
-
 }
-
 
 void WriteMessageOnConsole(string message)
 {
@@ -68,6 +66,5 @@ Job CreateJob(string usertext)
         HowManySecondsWillJobTake = howManySecondsWillJobTake,
         Type = JobType.SendEmail,
         ShouldFaillOnWorkerTwo = shouldFail
-
     };
 }

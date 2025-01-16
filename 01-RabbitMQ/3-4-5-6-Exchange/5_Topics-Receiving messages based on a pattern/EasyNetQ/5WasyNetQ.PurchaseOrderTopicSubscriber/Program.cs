@@ -7,9 +7,7 @@ using (var bus = RabbitHutch.CreateBus("host=localhost"))
 
     Console.WriteLine("Listening for (payment.purchaseorer) messages. Hit <return> to quit.");
     Console.ReadLine();
-
 }
-
 
 static void Handler(IPayment payment)
 {

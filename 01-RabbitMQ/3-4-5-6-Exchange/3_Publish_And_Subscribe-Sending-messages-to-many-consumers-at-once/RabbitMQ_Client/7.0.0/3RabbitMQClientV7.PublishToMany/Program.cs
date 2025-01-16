@@ -16,11 +16,9 @@ using (var channel = await connection.CreateChannelAsync())
         var body = Encoding.UTF8.GetBytes(message);
 
         await channel.BasicPublishAsync(exchange: "R6.03",
-            routingKey: "",body: body);
+            routingKey: "", body: body);
 
         Console.WriteLine(" [x] Sent {0}", message);
         Console.ReadLine();
     }
-
 }
-

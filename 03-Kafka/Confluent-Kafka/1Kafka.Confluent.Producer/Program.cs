@@ -34,7 +34,6 @@ MessageRequest GetMessageRequest()
         {
             Console.ForegroundColor = (ConsoleColor)i;
             Console.WriteLine($"{i} . {((ConsoleColor)i).ToString()}");
-
         }
         Console.ResetColor();
 
@@ -58,14 +57,12 @@ MessageRequest GetMessageRequest()
     return messageRequest;
 }
 
-
 async Task<bool> SendMessageRequest(string topic, string message)
 {
     ProducerConfig config = new ProducerConfig
     {
         BootstrapServers = bootstrapServers,
         ClientId = Dns.GetHostName(),
-
     };
 
     try
@@ -73,8 +70,6 @@ async Task<bool> SendMessageRequest(string topic, string message)
         using (var producer = new ProducerBuilder
         <Null, string>(config).Build())
         {
-
-
             var result = await producer.ProduceAsync
             (topic, new Message<Null, string>
             {

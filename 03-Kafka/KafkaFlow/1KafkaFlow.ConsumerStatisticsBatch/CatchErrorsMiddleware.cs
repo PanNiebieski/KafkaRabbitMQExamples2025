@@ -16,7 +16,6 @@ public class CatchErrorsMiddleware : IMessageMiddleware
     }
 }
 
-
 public class ReadMiddleware : IMessageMiddleware
 {
     public async Task Invoke(IMessageContext context, MiddlewareDelegate next)

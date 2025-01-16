@@ -1,7 +1,6 @@
-﻿using RabbitMQ.Client.Events;
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 using System.Text;
-using System.Threading.Channels;
 
 Console.Title = "1RabbitMQ.Receive";
 Console.WriteLine("1RabbitMQ.Receive");
@@ -33,7 +32,6 @@ using (var channel = connection.CreateModel())
     channel.BasicConsume(queue: "R6.01",
     autoAck: true, consumer: consumer);
 
-
     char key = 'z';
 
     while (key != 'q' && key != 'Q')
@@ -41,7 +39,4 @@ using (var channel = connection.CreateModel())
         Console.WriteLine(" Press [q] or [Q] to exit.");
         key = Console.ReadKey().KeyChar;
     }
-
 }
-
-

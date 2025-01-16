@@ -22,7 +22,6 @@ public class RabbitMqConsumerWorker : BackgroundService
 
         _queueName = config.Value.QueueName;
         _memoryMessage = memoryMessage;
-
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -55,4 +54,3 @@ public class RabbitMqConsumerWorker : BackgroundService
         }
     }
 }
-

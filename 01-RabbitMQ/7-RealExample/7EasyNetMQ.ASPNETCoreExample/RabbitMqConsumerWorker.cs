@@ -22,9 +22,7 @@ public class RabbitMqConsumerWorker : BackgroundService
             _memoryMessage.Write(message);
 
             return Task.CompletedTask;
-
         }, stoppingToken);
-
 
         while (true)
         {

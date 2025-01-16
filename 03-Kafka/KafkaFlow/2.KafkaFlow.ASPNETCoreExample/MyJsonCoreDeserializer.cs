@@ -1,7 +1,7 @@
 ﻿using _2.KafkaFlow.ASPNETCoreExample;
 using KafkaFlow;
-using System.Text.Json;
 using System.Text;
+using System.Text.Json;
 
 public class MyJsonCoreDeserializer : IDeserializer
 {
